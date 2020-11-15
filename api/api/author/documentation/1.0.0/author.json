@@ -592,6 +592,9 @@
               }
             }
           },
+          "legacy_id": {
+            "type": "string"
+          },
           "published_at": {
             "type": "string",
             "format": "date-time"
@@ -601,6 +604,9 @@
       "NewAuthor": {
         "properties": {
           "name": {
+            "type": "string"
+          },
+          "legacy_id": {
             "type": "string"
           },
           "published_at": {

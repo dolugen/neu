@@ -2,7 +2,8 @@
   "kind": "collectionType",
   "collectionName": "authors",
   "info": {
-    "name": "Author"
+    "name": "Author",
+    "description": ""
   },
   "options": {
     "increments": true,
@@ -23,6 +24,9 @@
       ],
       "plugin": "upload",
       "required": false
+    },
+    "legacy_id": {
+      "type": "string"
     }
   }
 }

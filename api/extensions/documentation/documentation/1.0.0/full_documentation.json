@@ -14,7 +14,7 @@
       "name": "Apache 2.0",
       "url": "https://www.apache.org/licenses/LICENSE-2.0.html"
     },
-    "x-generation-date": "11/15/2020 1:35:49 AM"
+    "x-generation-date": "11/15/2020 2:11:07 PM"
   },
   "x-strapi-config": {
     "path": "/documentation",
@@ -3757,6 +3757,9 @@
               }
             }
           },
+          "legacy_id": {
+            "type": "string"
+          },
           "published_at": {
             "type": "string",
             "format": "date-time"
@@ -3766,6 +3769,9 @@
       "NewAuthor": {
         "properties": {
           "name": {
+            "type": "string"
+          },
+          "legacy_id": {
             "type": "string"
           },
           "published_at": {
@@ -3984,6 +3990,9 @@
                 "type": "string"
               },
               "picture": {
+                "type": "string"
+              },
+              "legacy_id": {
                 "type": "string"
               },
               "published_at": {

@@ -619,6 +619,9 @@
               "picture": {
                 "type": "string"
               },
+              "legacy_id": {
+                "type": "string"
+              },
               "published_at": {
                 "type": "string"
               },
