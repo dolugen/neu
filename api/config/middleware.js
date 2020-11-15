@@ -6,7 +6,7 @@ module.exports = {
       jsonLimit: "10mb",
       formLimit: "10mb",
       formidable: {
-        maxFileSize: 1000000,
+        maxFileSize: 10000000,
       },
     },
   },
