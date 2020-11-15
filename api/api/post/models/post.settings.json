@@ -54,7 +54,8 @@
       "dominant": true
     },
     "legacy_id": {
-      "type": "string"
+      "type": "string",
+      "unique": true
     }
   }
 }

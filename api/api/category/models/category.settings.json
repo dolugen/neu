@@ -19,7 +19,8 @@
       "collection": "post"
     },
     "legacy_id": {
-      "type": "string"
+      "type": "string",
+      "unique": true
     }
   }
 }
