@@ -1,0 +1,72 @@
+{
+  "kind": "collectionType",
+  "collectionName": "movies",
+  "info": {
+    "name": "Movie",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "title": {
+      "type": "string",
+      "required": true
+    },
+    "title_mongolian": {
+      "type": "string"
+    },
+    "title_original": {
+      "type": "string"
+    },
+    "synopsis": {
+      "type": "text"
+    },
+    "image": {
+      "model": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images"
+      ],
+      "plugin": "upload",
+      "required": false
+    },
+    "color": {
+      "type": "enumeration",
+      "enum": [
+        "black_and_white",
+        "color"
+      ]
+    },
+    "silent": {
+      "type": "boolean"
+    },
+    "length_min": {
+      "type": "integer"
+    },
+    "year": {
+      "type": "integer"
+    },
+    "trailer_url": {
+      "type": "string"
+    },
+    "imdb_url": {
+      "type": "string"
+    },
+    "submitted_user": {
+      "private": true,
+      "plugin": "admin",
+      "model": "user"
+    },
+    "slug": {
+      "type": "uid",
+      "targetField": "title"
+    },
+    "legacy_id": {
+      "type": "string",
+      "unique": true
+    }
+  }
+}
