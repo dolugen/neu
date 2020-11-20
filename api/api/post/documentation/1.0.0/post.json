@@ -622,9 +622,6 @@
               "legacy_id": {
                 "type": "string"
               },
-              "published_at": {
-                "type": "string"
-              },
               "created_by": {
                 "type": "string"
               },
@@ -660,9 +657,6 @@
                   }
                 },
                 "legacy_id": {
-                  "type": "string"
-                },
-                "published_at": {
                   "type": "string"
                 },
                 "created_by": {

@@ -2,12 +2,13 @@
   "kind": "collectionType",
   "collectionName": "countries",
   "info": {
-    "name": "Country"
+    "name": "Country",
+    "description": ""
   },
   "options": {
     "increments": true,
     "timestamps": true,
-    "draftAndPublish": true
+    "draftAndPublish": false
   },
   "attributes": {
     "name": {
@@ -21,8 +22,8 @@
       "unique": true
     },
     "movies": {
-      "via": "countries",
-      "collection": "movie"
+      "collection": "movie",
+      "via": "countries"
     }
   }
 }

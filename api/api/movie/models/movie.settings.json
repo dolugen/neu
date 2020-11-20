@@ -69,13 +69,13 @@
       "dominant": true
     },
     "countries": {
-      "collection": "country",
       "via": "movies",
+      "collection": "country",
       "dominant": true
     },
     "categories": {
-      "collection": "movie-category",
       "via": "movies",
+      "collection": "movie-category",
       "dominant": true
     }
   }

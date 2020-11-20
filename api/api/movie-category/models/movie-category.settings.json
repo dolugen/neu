@@ -2,12 +2,13 @@
   "kind": "collectionType",
   "collectionName": "movie_categories",
   "info": {
-    "name": "Movie Category"
+    "name": "Movie Category",
+    "description": ""
   },
   "options": {
     "increments": true,
     "timestamps": true,
-    "draftAndPublish": true
+    "draftAndPublish": false
   },
   "attributes": {
     "name": {
@@ -18,8 +19,8 @@
       "unique": true
     },
     "movies": {
-      "via": "categories",
-      "collection": "movie"
+      "collection": "movie",
+      "via": "categories"
     }
   }
 }
