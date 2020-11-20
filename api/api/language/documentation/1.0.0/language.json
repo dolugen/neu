@@ -1,6 +1,6 @@
 {
   "paths": {
-    "/movies": {
+    "/languages": {
       "get": {
         "deprecated": false,
         "description": "",
@@ -12,7 +12,7 @@
                 "schema": {
                   "type": "array",
                   "items": {
-                    "$ref": "#/components/schemas/Movie"
+                    "$ref": "#/components/schemas/Language"
                   }
                 }
               }
@@ -51,7 +51,7 @@
         },
         "summary": "",
         "tags": [
-          "Movie"
+          "Language"
         ],
         "parameters": [
           {
@@ -201,7 +201,7 @@
             "content": {
               "application/json": {
                 "schema": {
-                  "$ref": "#/components/schemas/Movie"
+                  "$ref": "#/components/schemas/Language"
                 }
               }
             }
@@ -239,7 +239,7 @@
         },
         "summary": "",
         "tags": [
-          "Movie"
+          "Language"
         ],
         "requestBody": {
           "description": "",
@@ -247,14 +247,14 @@
           "content": {
             "application/json": {
               "schema": {
-                "$ref": "#/components/schemas/NewMovie"
+                "$ref": "#/components/schemas/NewLanguage"
               }
             }
           }
         }
       }
     },
-    "/movies/count": {
+    "/languages/count": {
       "get": {
         "deprecated": false,
         "description": "",
@@ -306,12 +306,12 @@
         },
         "summary": "",
         "tags": [
-          "Movie"
+          "Language"
         ],
         "parameters": []
       }
     },
-    "/movies/{id}": {
+    "/languages/{id}": {
       "get": {
         "deprecated": false,
         "description": "",
@@ -321,7 +321,7 @@
             "content": {
               "application/json": {
                 "schema": {
-                  "$ref": "#/components/schemas/Movie"
+                  "$ref": "#/components/schemas/Language"
                 }
               }
             }
@@ -359,7 +359,7 @@
         },
         "summary": "",
         "tags": [
-          "Movie"
+          "Language"
         ],
         "parameters": [
           {
@@ -383,7 +383,7 @@
             "content": {
               "application/json": {
                 "schema": {
-                  "$ref": "#/components/schemas/Movie"
+                  "$ref": "#/components/schemas/Language"
                 }
               }
             }
@@ -421,7 +421,7 @@
         },
         "summary": "",
         "tags": [
-          "Movie"
+          "Language"
         ],
         "requestBody": {
           "description": "",
@@ -429,7 +429,7 @@
           "content": {
             "application/json": {
               "schema": {
-                "$ref": "#/components/schemas/NewMovie"
+                "$ref": "#/components/schemas/NewLanguage"
               }
             }
           }
@@ -495,7 +495,7 @@
         },
         "summary": "",
         "tags": [
-          "Movie"
+          "Language"
         ],
         "parameters": [
           {
@@ -514,176 +514,86 @@
   },
   "components": {
     "schemas": {
-      "Movie": {
+      "Language": {
         "required": [
-          "id",
-          "title"
+          "id"
         ],
         "properties": {
           "id": {
             "type": "string"
           },
-          "title": {
+          "name": {
             "type": "string"
           },
-          "title_mongolian": {
-            "type": "string"
-          },
-          "title_original": {
-            "type": "string"
-          },
-          "synopsis": {
-            "type": "string"
-          },
-          "image": {
-            "required": [
-              "id",
-              "name",
-              "hash",
-              "mime",
-              "size",
-              "url",
-              "provider"
-            ],
-            "properties": {
-              "id": {
-                "type": "string"
-              },
-              "name": {
-                "type": "string"
-              },
-              "alternativeText": {
-                "type": "string"
-              },
-              "caption": {
-                "type": "string"
-              },
-              "width": {
-                "type": "integer"
-              },
-              "height": {
-                "type": "integer"
-              },
-              "formats": {
-                "type": "object"
-              },
-              "hash": {
-                "type": "string"
-              },
-              "ext": {
-                "type": "string"
-              },
-              "mime": {
-                "type": "string"
-              },
-              "size": {
-                "type": "number"
-              },
-              "url": {
-                "type": "string"
-              },
-              "previewUrl": {
-                "type": "string"
-              },
-              "provider": {
-                "type": "string"
-              },
-              "provider_metadata": {
-                "type": "object"
-              },
-              "related": {
-                "type": "string"
-              },
-              "created_by": {
-                "type": "string"
-              },
-              "updated_by": {
-                "type": "string"
-              }
-            }
-          },
-          "color": {
-            "type": "string",
-            "enum": [
-              "black_and_white",
-              "color"
-            ]
-          },
-          "silent": {
-            "type": "boolean"
-          },
-          "length_min": {
-            "type": "integer"
-          },
-          "year": {
-            "type": "integer"
-          },
-          "trailer_url": {
-            "type": "string"
-          },
-          "imdb_url": {
-            "type": "string"
-          },
-          "slug": {
+          "code": {
             "type": "uid"
           },
           "legacy_id": {
             "type": "string"
           },
-          "languages": {
+          "movies": {
             "type": "array",
             "items": {
               "required": [
-                "id"
+                "id",
+                "title"
               ],
               "properties": {
                 "id": {
                   "type": "string"
                 },
-                "name": {
+                "title": {
                   "type": "string"
                 },
-                "code": {
+                "title_mongolian": {
+                  "type": "string"
+                },
+                "title_original": {
+                  "type": "string"
+                },
+                "synopsis": {
+                  "type": "string"
+                },
+                "image": {
+                  "type": "string"
+                },
+                "color": {
+                  "type": "string"
+                },
+                "silent": {
+                  "type": "boolean"
+                },
+                "length_min": {
+                  "type": "integer"
+                },
+                "year": {
+                  "type": "integer"
+                },
+                "trailer_url": {
+                  "type": "string"
+                },
+                "imdb_url": {
+                  "type": "string"
+                },
+                "slug": {
                   "type": "uid"
                 },
                 "legacy_id": {
                   "type": "string"
                 },
-                "movies": {
+                "languages": {
                   "type": "array",
                   "items": {
                     "type": "string"
                   }
                 },
-                "created_by": {
-                  "type": "string"
+                "countries": {
+                  "type": "array",
+                  "items": {
+                    "type": "string"
+                  }
                 },
-                "updated_by": {
-                  "type": "string"
-                }
-              }
-            }
-          },
-          "countries": {
-            "type": "array",
-            "items": {
-              "required": [
-                "id"
-              ],
-              "properties": {
-                "id": {
-                  "type": "string"
-                },
-                "name": {
-                  "type": "string"
-                },
-                "code": {
-                  "type": "uid"
-                },
-                "legacy_id": {
-                  "type": "string"
-                },
-                "movies": {
+                "categories": {
                   "type": "array",
                   "items": {
                     "type": "string"
@@ -700,113 +610,25 @@
                 }
               }
             }
-          },
-          "categories": {
-            "type": "array",
-            "items": {
-              "required": [
-                "id"
-              ],
-              "properties": {
-                "id": {
-                  "type": "string"
-                },
-                "name": {
-                  "type": "string"
-                },
-                "legacy_id": {
-                  "type": "string"
-                },
-                "movies": {
-                  "type": "array",
-                  "items": {
-                    "type": "string"
-                  }
-                },
-                "published_at": {
-                  "type": "string"
-                },
-                "created_by": {
-                  "type": "string"
-                },
-                "updated_by": {
-                  "type": "string"
-                }
-              }
-            }
-          },
-          "published_at": {
-            "type": "string",
-            "format": "date-time"
           }
         }
       },
-      "NewMovie": {
-        "required": [
-          "title"
-        ],
+      "NewLanguage": {
         "properties": {
-          "title": {
+          "name": {
             "type": "string"
           },
-          "title_mongolian": {
-            "type": "string"
-          },
-          "title_original": {
-            "type": "string"
-          },
-          "synopsis": {
-            "type": "string"
-          },
-          "color": {
-            "type": "string",
-            "enum": [
-              "black_and_white",
-              "color"
-            ]
-          },
-          "silent": {
-            "type": "boolean"
-          },
-          "length_min": {
-            "type": "integer"
-          },
-          "year": {
-            "type": "integer"
-          },
-          "trailer_url": {
-            "type": "string"
-          },
-          "imdb_url": {
-            "type": "string"
-          },
-          "slug": {
+          "code": {
             "type": "uid"
           },
           "legacy_id": {
             "type": "string"
           },
-          "languages": {
+          "movies": {
             "type": "array",
             "items": {
               "type": "string"
             }
-          },
-          "countries": {
-            "type": "array",
-            "items": {
-              "type": "string"
-            }
-          },
-          "categories": {
-            "type": "array",
-            "items": {
-              "type": "string"
-            }
-          },
-          "published_at": {
-            "type": "string",
-            "format": "date-time"
           },
           "created_by": {
             "type": "string"
@@ -820,7 +642,7 @@
   },
   "tags": [
     {
-      "name": "Movie"
+      "name": "Language"
     }
   ]
 }

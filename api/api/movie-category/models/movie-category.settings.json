@@ -1,9 +1,8 @@
 {
   "kind": "collectionType",
-  "collectionName": "categories",
+  "collectionName": "movie_categories",
   "info": {
-    "name": "Post Category",
-    "description": ""
+    "name": "Movie Category"
   },
   "options": {
     "increments": true,
@@ -11,16 +10,16 @@
     "draftAndPublish": true
   },
   "attributes": {
-    "title": {
+    "name": {
       "type": "string"
-    },
-    "posts": {
-      "collection": "post",
-      "via": "categories"
     },
     "legacy_id": {
       "type": "string",
       "unique": true
+    },
+    "movies": {
+      "via": "categories",
+      "collection": "movie"
     }
   }
 }

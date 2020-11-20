@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/movie-categories",
+      "handler": "movie-category.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/movie-categories/count",
+      "handler": "movie-category.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/movie-categories/:id",
+      "handler": "movie-category.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/movie-categories",
+      "handler": "movie-category.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/movie-categories/:id",
+      "handler": "movie-category.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/movie-categories/:id",
+      "handler": "movie-category.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

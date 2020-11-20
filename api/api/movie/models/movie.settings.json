@@ -55,11 +55,6 @@
     "imdb_url": {
       "type": "string"
     },
-    "submitted_user": {
-      "private": true,
-      "plugin": "admin",
-      "model": "user"
-    },
     "slug": {
       "type": "uid",
       "targetField": "title"
@@ -67,6 +62,21 @@
     "legacy_id": {
       "type": "string",
       "unique": true
+    },
+    "languages": {
+      "collection": "language",
+      "via": "movies",
+      "dominant": true
+    },
+    "countries": {
+      "collection": "country",
+      "via": "movies",
+      "dominant": true
+    },
+    "categories": {
+      "collection": "movie-category",
+      "via": "movies",
+      "dominant": true
     }
   }
 }

@@ -1,26 +1,28 @@
 {
   "kind": "collectionType",
-  "collectionName": "categories",
+  "collectionName": "languages",
   "info": {
-    "name": "Post Category",
-    "description": ""
+    "name": "Language"
   },
   "options": {
     "increments": true,
     "timestamps": true,
-    "draftAndPublish": true
+    "draftAndPublish": false
   },
   "attributes": {
-    "title": {
+    "name": {
       "type": "string"
     },
-    "posts": {
-      "collection": "post",
-      "via": "categories"
+    "code": {
+      "type": "uid"
     },
     "legacy_id": {
       "type": "string",
       "unique": true
+    },
+    "movies": {
+      "via": "languages",
+      "collection": "movie"
     }
   }
 }

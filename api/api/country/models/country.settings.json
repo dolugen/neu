@@ -1,9 +1,8 @@
 {
   "kind": "collectionType",
-  "collectionName": "categories",
+  "collectionName": "countries",
   "info": {
-    "name": "Post Category",
-    "description": ""
+    "name": "Country"
   },
   "options": {
     "increments": true,
@@ -11,16 +10,19 @@
     "draftAndPublish": true
   },
   "attributes": {
-    "title": {
+    "name": {
       "type": "string"
     },
-    "posts": {
-      "collection": "post",
-      "via": "categories"
+    "code": {
+      "type": "uid"
     },
     "legacy_id": {
       "type": "string",
       "unique": true
+    },
+    "movies": {
+      "via": "countries",
+      "collection": "movie"
     }
   }
 }

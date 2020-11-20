@@ -47,8 +47,8 @@
       ]
     },
     "categories": {
-      "collection": "category",
       "via": "posts",
+      "collection": "category",
       "dominant": true
     },
     "legacy_id": {
