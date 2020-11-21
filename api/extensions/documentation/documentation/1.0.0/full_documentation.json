@@ -14,7 +14,7 @@
       "name": "Apache 2.0",
       "url": "https://www.apache.org/licenses/LICENSE-2.0.html"
     },
-    "x-generation-date": "11/21/2020 4:36:24 PM"
+    "x-generation-date": "11/21/2020 5:11:28 PM"
   },
   "x-strapi-config": {
     "path": "/documentation",
@@ -7737,9 +7737,6 @@
               "name_mongolian": {
                 "type": "string"
               },
-              "bio": {
-                "type": "string"
-              },
               "birth_year": {
                 "type": "string"
               },
@@ -7753,6 +7750,9 @@
                 "type": "string"
               },
               "legacy_id": {
+                "type": "string"
+              },
+              "bio": {
                 "type": "string"
               },
               "created_by": {
@@ -8092,9 +8092,6 @@
           "name_mongolian": {
             "type": "string"
           },
-          "bio": {
-            "type": "string"
-          },
           "birth_year": {
             "type": "string"
           },
@@ -8173,6 +8170,9 @@
           },
           "legacy_id": {
             "type": "string"
+          },
+          "bio": {
+            "type": "string"
           }
         }
       },
@@ -8182,9 +8182,6 @@
             "type": "string"
           },
           "name_mongolian": {
-            "type": "string"
-          },
-          "bio": {
             "type": "string"
           },
           "birth_year": {
@@ -8197,6 +8194,9 @@
             "type": "string"
           },
           "legacy_id": {
+            "type": "string"
+          },
+          "bio": {
             "type": "string"
           },
           "created_by": {

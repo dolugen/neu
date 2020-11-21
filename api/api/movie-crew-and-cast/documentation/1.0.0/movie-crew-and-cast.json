@@ -651,9 +651,6 @@
               "name_mongolian": {
                 "type": "string"
               },
-              "bio": {
-                "type": "string"
-              },
               "birth_year": {
                 "type": "string"
               },
@@ -667,6 +664,9 @@
                 "type": "string"
               },
               "legacy_id": {
+                "type": "string"
+              },
+              "bio": {
                 "type": "string"
               },
               "created_by": {

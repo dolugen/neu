@@ -17,9 +17,6 @@
     "name_mongolian": {
       "type": "string"
     },
-    "bio": {
-      "type": "string"
-    },
     "birth_year": {
       "type": "string"
     },
@@ -43,6 +40,9 @@
     "legacy_id": {
       "type": "string",
       "unique": true
+    },
+    "bio": {
+      "type": "richtext"
     }
   }
 }
