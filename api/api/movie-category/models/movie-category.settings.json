@@ -19,6 +19,7 @@
       "unique": true
     },
     "movies": {
+      "private": true,
       "collection": "movie",
       "via": "categories"
     }

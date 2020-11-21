@@ -602,13 +602,6 @@
               }
             }
           },
-          "color": {
-            "type": "string",
-            "enum": [
-              "black_and_white",
-              "color"
-            ]
-          },
           "silent": {
             "type": "boolean"
           },
@@ -751,13 +744,6 @@
           },
           "synopsis": {
             "type": "string"
-          },
-          "color": {
-            "type": "string",
-            "enum": [
-              "black_and_white",
-              "color"
-            ]
           },
           "silent": {
             "type": "boolean"

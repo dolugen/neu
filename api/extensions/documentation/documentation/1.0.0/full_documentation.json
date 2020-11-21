@@ -14,7 +14,7 @@
       "name": "Apache 2.0",
       "url": "https://www.apache.org/licenses/LICENSE-2.0.html"
     },
-    "x-generation-date": "11/20/2020 11:38:10 PM"
+    "x-generation-date": "11/21/2020 1:02:48 AM"
   },
   "x-strapi-config": {
     "path": "/documentation",
@@ -5944,86 +5944,6 @@
           },
           "legacy_id": {
             "type": "string"
-          },
-          "movies": {
-            "type": "array",
-            "items": {
-              "required": [
-                "id",
-                "title"
-              ],
-              "properties": {
-                "id": {
-                  "type": "string"
-                },
-                "title": {
-                  "type": "string"
-                },
-                "title_mongolian": {
-                  "type": "string"
-                },
-                "title_original": {
-                  "type": "string"
-                },
-                "synopsis": {
-                  "type": "string"
-                },
-                "image": {
-                  "type": "string"
-                },
-                "color": {
-                  "type": "string"
-                },
-                "silent": {
-                  "type": "boolean"
-                },
-                "length_min": {
-                  "type": "integer"
-                },
-                "year": {
-                  "type": "integer"
-                },
-                "trailer_url": {
-                  "type": "string"
-                },
-                "imdb_url": {
-                  "type": "string"
-                },
-                "slug": {
-                  "type": "uid"
-                },
-                "legacy_id": {
-                  "type": "string"
-                },
-                "languages": {
-                  "type": "array",
-                  "items": {
-                    "type": "string"
-                  }
-                },
-                "countries": {
-                  "type": "array",
-                  "items": {
-                    "type": "string"
-                  }
-                },
-                "categories": {
-                  "type": "array",
-                  "items": {
-                    "type": "string"
-                  }
-                },
-                "published_at": {
-                  "type": "string"
-                },
-                "created_by": {
-                  "type": "string"
-                },
-                "updated_by": {
-                  "type": "string"
-                }
-              }
-            }
           }
         }
       },
@@ -6068,86 +5988,6 @@
           },
           "legacy_id": {
             "type": "string"
-          },
-          "movies": {
-            "type": "array",
-            "items": {
-              "required": [
-                "id",
-                "title"
-              ],
-              "properties": {
-                "id": {
-                  "type": "string"
-                },
-                "title": {
-                  "type": "string"
-                },
-                "title_mongolian": {
-                  "type": "string"
-                },
-                "title_original": {
-                  "type": "string"
-                },
-                "synopsis": {
-                  "type": "string"
-                },
-                "image": {
-                  "type": "string"
-                },
-                "color": {
-                  "type": "string"
-                },
-                "silent": {
-                  "type": "boolean"
-                },
-                "length_min": {
-                  "type": "integer"
-                },
-                "year": {
-                  "type": "integer"
-                },
-                "trailer_url": {
-                  "type": "string"
-                },
-                "imdb_url": {
-                  "type": "string"
-                },
-                "slug": {
-                  "type": "uid"
-                },
-                "legacy_id": {
-                  "type": "string"
-                },
-                "languages": {
-                  "type": "array",
-                  "items": {
-                    "type": "string"
-                  }
-                },
-                "countries": {
-                  "type": "array",
-                  "items": {
-                    "type": "string"
-                  }
-                },
-                "categories": {
-                  "type": "array",
-                  "items": {
-                    "type": "string"
-                  }
-                },
-                "published_at": {
-                  "type": "string"
-                },
-                "created_by": {
-                  "type": "string"
-                },
-                "updated_by": {
-                  "type": "string"
-                }
-              }
-            }
           }
         }
       },
@@ -6189,86 +6029,6 @@
           },
           "legacy_id": {
             "type": "string"
-          },
-          "movies": {
-            "type": "array",
-            "items": {
-              "required": [
-                "id",
-                "title"
-              ],
-              "properties": {
-                "id": {
-                  "type": "string"
-                },
-                "title": {
-                  "type": "string"
-                },
-                "title_mongolian": {
-                  "type": "string"
-                },
-                "title_original": {
-                  "type": "string"
-                },
-                "synopsis": {
-                  "type": "string"
-                },
-                "image": {
-                  "type": "string"
-                },
-                "color": {
-                  "type": "string"
-                },
-                "silent": {
-                  "type": "boolean"
-                },
-                "length_min": {
-                  "type": "integer"
-                },
-                "year": {
-                  "type": "integer"
-                },
-                "trailer_url": {
-                  "type": "string"
-                },
-                "imdb_url": {
-                  "type": "string"
-                },
-                "slug": {
-                  "type": "uid"
-                },
-                "legacy_id": {
-                  "type": "string"
-                },
-                "languages": {
-                  "type": "array",
-                  "items": {
-                    "type": "string"
-                  }
-                },
-                "countries": {
-                  "type": "array",
-                  "items": {
-                    "type": "string"
-                  }
-                },
-                "categories": {
-                  "type": "array",
-                  "items": {
-                    "type": "string"
-                  }
-                },
-                "published_at": {
-                  "type": "string"
-                },
-                "created_by": {
-                  "type": "string"
-                },
-                "updated_by": {
-                  "type": "string"
-                }
-              }
-            }
           }
         }
       },
@@ -6381,13 +6141,6 @@
                 "type": "string"
               }
             }
-          },
-          "color": {
-            "type": "string",
-            "enum": [
-              "black_and_white",
-              "color"
-            ]
           },
           "silent": {
             "type": "boolean"
@@ -6531,13 +6284,6 @@
           },
           "synopsis": {
             "type": "string"
-          },
-          "color": {
-            "type": "string",
-            "enum": [
-              "black_and_white",
-              "color"
-            ]
           },
           "silent": {
             "type": "boolean"

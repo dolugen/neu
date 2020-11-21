@@ -33,13 +33,6 @@
       "plugin": "upload",
       "required": false
     },
-    "color": {
-      "type": "enumeration",
-      "enum": [
-        "black_and_white",
-        "color"
-      ]
-    },
     "silent": {
       "type": "boolean"
     },
@@ -64,8 +57,8 @@
       "unique": true
     },
     "languages": {
-      "collection": "language",
       "via": "movies",
+      "collection": "language",
       "dominant": true
     },
     "countries": {
