@@ -679,9 +679,6 @@
           },
           "description": {
             "type": "string"
-          },
-          "legacy_id": {
-            "type": "string"
           }
         }
       },
@@ -697,9 +694,6 @@
             "type": "string"
           },
           "description": {
-            "type": "string"
-          },
-          "legacy_id": {
             "type": "string"
           },
           "created_by": {

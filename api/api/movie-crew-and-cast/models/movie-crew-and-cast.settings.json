@@ -22,10 +22,6 @@
     },
     "description": {
       "type": "string"
-    },
-    "legacy_id": {
-      "type": "string",
-      "unique": true
     }
   }
 }
