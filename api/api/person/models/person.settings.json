@@ -1,0 +1,48 @@
+{
+  "kind": "collectionType",
+  "collectionName": "people",
+  "info": {
+    "name": "Person",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": false
+  },
+  "attributes": {
+    "name": {
+      "type": "string"
+    },
+    "name_mongolian": {
+      "type": "string"
+    },
+    "bio": {
+      "type": "string"
+    },
+    "birth_year": {
+      "type": "string"
+    },
+    "death_year": {
+      "type": "string"
+    },
+    "quote": {
+      "type": "text"
+    },
+    "image": {
+      "model": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos"
+      ],
+      "plugin": "upload",
+      "required": false
+    },
+    "legacy_id": {
+      "type": "string",
+      "unique": true
+    }
+  }
+}

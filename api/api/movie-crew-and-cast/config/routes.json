@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/movie-crew-and-casts",
+      "handler": "movie-crew-and-cast.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/movie-crew-and-casts/count",
+      "handler": "movie-crew-and-cast.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/movie-crew-and-casts/:id",
+      "handler": "movie-crew-and-cast.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/movie-crew-and-casts",
+      "handler": "movie-crew-and-cast.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/movie-crew-and-casts/:id",
+      "handler": "movie-crew-and-cast.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/movie-crew-and-casts/:id",
+      "handler": "movie-crew-and-cast.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

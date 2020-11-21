@@ -1,0 +1,31 @@
+{
+  "kind": "collectionType",
+  "collectionName": "movie_crew_and_casts",
+  "info": {
+    "name": "Movie Crew & Cast",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": false
+  },
+  "attributes": {
+    "movie": {
+      "model": "movie"
+    },
+    "role_category": {
+      "model": "role-category"
+    },
+    "person": {
+      "model": "person"
+    },
+    "description": {
+      "type": "string"
+    },
+    "legacy_id": {
+      "type": "string",
+      "unique": true
+    }
+  }
+}
