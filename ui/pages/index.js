@@ -1,24 +1,28 @@
 import Container from '@/components/container'
 import MoreStories from '@/components/more-stories'
+import Movies from '@/components/movies'
 import HeroPost from '@/components/hero-post'
 import Intro from '@/components/intro'
 import Layout from '@/components/layout'
-import { getAllPostsForHome } from '@/lib/api'
+import { getAllPostsForHome, getAllMoviesForHome } from '@/lib/api'
 import Head from 'next/head'
 import { CMS_NAME } from '@/lib/constants'
 
-export default function Index({ allPosts, preview }) {
+
+    
+export default function Index({ allPosts, allMovies, preview }) {
   const heroPost = allPosts[0]
   const morePosts = allPosts.slice(1)
+  const heroMovie = allMovies.slice(1)
   return (
     <>
-      <Layout preview={preview}>
+      <Layout>
         <Head>
-          <title>Next.js Blog Example with {CMS_NAME}</title>
+          <title>artfilm.mn</title>
         </Head>
         <Container>
-          <Intro />
-          {heroPost && (
+          <Intro/>
+          {/* {heroPost && (
             <HeroPost
               title={heroPost.title}
               coverImage={heroPost.coverImage}
@@ -27,8 +31,9 @@ export default function Index({ allPosts, preview }) {
               slug={heroPost.slug}
               excerpt={heroPost.excerpt}
             />
-          )}
-          {morePosts.length > 0 && <MoreStories posts={morePosts} />}
+          )} */}
+          {/* {morePosts.length > 0 && <MoreStories posts={morePosts} />} */}
+          {heroMovie.length > 0 && <Movies movies={allMovies}/>}
         </Container>
       </Layout>
     </>
@@ -37,7 +42,8 @@ export default function Index({ allPosts, preview }) {
 
 export async function getStaticProps({ preview = null }) {
   const allPosts = (await getAllPostsForHome(preview)) || []
+  const allMovies = (await getAllMoviesForHome(preview)) || []
   return {
-    props: { allPosts, preview },
+    props: { allPosts, allMovies, preview },
   }
 }

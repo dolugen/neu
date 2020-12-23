@@ -1,5 +1,5 @@
 async function fetchAPI(query, { variables } = {}) {
-  const res = await fetch(`${process.env.NEXT_PUBLIC_STRAPI_API_URL}/graphql`, {
+  const res = await fetch(`${process.env.NEXT_PUBLIC_STRAPI_API_URL || "http://206.189.58.97"}/graphql`, {
     method: 'POST',
     headers: {
       'Content-Type': 'application/json',
@@ -54,7 +54,7 @@ export async function getAllPostsForHome(preview) {
   const data = await fetchAPI(
     `
     query Posts($where: JSON){
-      posts(sort: "date:desc", limit: 250, where: $where) {
+      posts(sort: "date:desc", limit: 10, where: $where) {
         title
         slug
         excerpt
@@ -137,4 +137,22 @@ export async function getPostAndMorePosts(slug, preview) {
     }
   )
   return data
+}
+
+export async function getAllMoviesForHome(preview) {
+  const data = await fetchAPI(
+    `
+    query Movies($where: JSON){
+      movies(sort: "title:desc", limit: 10, where: $where) {
+        title
+        title_mongolian
+        slug
+        image {
+          url
+        }
+      }
+    }
+  `
+  )
+  return data?.movies
 }
