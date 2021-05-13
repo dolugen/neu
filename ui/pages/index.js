@@ -11,7 +11,7 @@ import Carousel from "react-slick"
 import Image from 'next/image'
 
 
-    
+
 export default function Index({ allPosts, allMovies, preview }) {
   const heroPost = allPosts[0]
   const morePosts = allPosts.slice(1)
@@ -36,7 +36,9 @@ export default function Index({ allPosts, allMovies, preview }) {
           <div>
             Grid Menu
           </div>
-          {heroMovie.length > 0 && <Movies movies={allMovies}/>}
+          <div>
+            {heroMovie.length > 0 && <Movies movies={allMovies} />}
+          </div>
         </Container>
       </Layout>
     </>

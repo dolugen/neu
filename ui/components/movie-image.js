@@ -9,7 +9,7 @@ export default function MovieImage({ title, url, slug }) {
       {slug ? (
         <Link as={`/movies/${slug}`} href="/movies/[slug]">
           <a aria-label={title}>
-            <img src={imageUrl} alt={title} />
+            <img src={imageUrl} alt={title}/>
           </a>
         </Link>
       ) : (

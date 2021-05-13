@@ -1,5 +1,9 @@
+import { urlObjectKeys } from "next/dist/next-server/lib/utils"
+// const relativeURL = `${process.env.NEXT_PUBLIC_STRAPI_API_URL}/graphql`
+const relativeURL = 'graphql' 
+const baseURL = 'https://strapi.artfilm.mn'
 async function fetchAPI(query, { variables } = {}) {
-  const res = await fetch(`${process.env.NEXT_PUBLIC_STRAPI_API_URL}/graphql`, {
+  const res = await fetch(`${process.env.NEXT_PUBLIC_STRAPI_API_URL || "https://strapi.artfilm.mn"}/graphql`,{
     method: 'POST',
     headers: {
       'Content-Type': 'application/json',
@@ -9,6 +13,7 @@ async function fetchAPI(query, { variables } = {}) {
       variables,
     }),
   })
+  
 
   const json = await res.json()
   if (json.errors) {
